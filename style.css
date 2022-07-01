@@ -239,21 +239,17 @@ background-color: transparent;
 
 @media (max-width: 600px) {
     @supports (display: grid){
-        main {
-            max-width: 10000px;
-            margin: 0;
-        }
-        .container {
-            display: grid;
-            margin-top: 100px;
-            width: 90%;
-            max-width: 100%;
-        }
 
         .super-container {
 
             width: 90%;
             max-width: 200%;
+        }
+        .container {
+            display: grid;
+            margin-top: 200px;
+            width: 90%;
+            max-width: 100%;
         }
 
         .btn2 {
