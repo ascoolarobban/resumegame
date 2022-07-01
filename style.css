@@ -237,14 +237,24 @@ background-color: transparent;
     transition: all 300ms ease-out;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 600px) {
     .container {
-        width: 95%;
+        margin-top: 100px;
+        width: 90%;
         max-width: 100%;
     }
 
     .super-container {
-        width: 100%;
-        max-width: 100%;
+
+        width: 90%;
+        max-width: 200%;
+    }
+
+    .btn2 {
+        margin-top: 20px;
+        width: 30%;
+        flex-direction: column-reverse;
+        color: black;
+
     }
 }
