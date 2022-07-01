@@ -48,6 +48,7 @@ let state = {}
 
 function startGame(){
     state = {}
+    document.getElementById("sword").hidden=true;
     showTextNode(1)
 
 }
