@@ -246,8 +246,6 @@ background-color: transparent;
             max-width: 100%;
         }
         .container {
-            display: block;
-            display: grid;
             margin-top: 200px;
             width: 100%;
             max-width: 100%;
