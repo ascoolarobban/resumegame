@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- This comment line needed for bootstrap to work on mobile devices -->
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="initial-scale=0.8, zoom=10%, width=device-width, target-densitydpi=high-dpi">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+        <style>@media (max-width: 980px) {
+            .container {
+                margin-top: 100px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .super-container {
+
+                width: 100%;
+                max-width: 100%;
+            }
+            .btn2{
+
+                width: 30%;
+                position: center;
+            }
+
+        }</style>
+<!--    <style>@media all and (max-width: 980px) {-->
+<!--        .container{-->
+<!--            width:100%;-->
+<!--        }-->
+
+<!--        .btn3 {-->
+<!--            display:none;-->
+<!--        }-->
+<!--    }</style>-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" type="image/x-icon" href="r_icon.ico">
+    <title>ROBIN ELLINGSEN</title>
+    <script defer src="game.js"></script>
+
+</head>
+<body>
+
+
+
+
+    <button class="btn3"  id="soundBtn" onclick="playMp3()">sound</button>
+    <img src="sword.png" class="swordBox" id="sword"  width="32" height="32">
+    <div class='cursor' id="cursor"></div>
+
+
+    <div class="super-container">
+
+
+        <div class ="container">
+            <div class="text" id="text">Text</div>
+                <div id="option-buttons" class="btn-grid">
+                    <button class="btn">option1</button>
+                    <button class="btn">option2</button>
+                    <button class="btn">option3</button>
+                    <button class="btn">option4</button>
+            </div>
+        </div>
+        <div class="wrapper">
+                <div class = "wood" id = "wood-1"></div>
+                <div class = "wood" id = "wood-2"></div>
+                <div class="flame red"></div>
+                <div class="flame yellow"></div>
+                <div class="flame white"></div>
+
+        </div>
+        <div>
+
+            <a href="cv.pdf" download="Robin_Ellingsen_resume" target="_blank"> <button class="btn2">Get resumé</button></a>
+            <a href="https://www.linkedin.com/in/iotrobban/" target="_blank"><button class="btn2">Linkedin</button></a>
+            <a href="https://github.com/ascoolarobban/resume_game" target="_blank"><button class="btn2">Github<i class="fa fa-github"></i></button></a>
+        </div>
+        <h5>
+        <p style="color:grey ">©Robin Ellingsen</p>
+        </h5>
+    </div>
+
+
+    <script>
+        let playState = false;
+        var soundButton = document.getElementById("soundBtn");
+
+        function playMp3() {
+            if(playState === true){
+                soundButton.innerText=="show"
+                fireAudio.pause();
+                playState = false;
+            }
+            else{
+                document.getElementById("soundBtn").value="Sound on";
+                fireAudio.play();
+                playState = true;
+
+            }
+        }
+    </script>
+
+
+</body>
+</html>
