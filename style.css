@@ -242,8 +242,8 @@ background-color: transparent;
 
         .super-container {
 
-            width: 90%;
-            max-width: 200%;
+            width: 100%;
+            max-width: 100%;
         }
         .container {
             display: grid;
