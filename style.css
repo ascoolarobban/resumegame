@@ -238,23 +238,30 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
-    .container {
-        margin-top: 100px;
-        width: 90%;
-        max-width: 100%;
-    }
+    @supports (display: grid){
+        main {
+            max-width: 10000px;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            margin-top: 100px;
+            width: 90%;
+            max-width: 100%;
+        }
 
-    .super-container {
+        .super-container {
 
-        width: 90%;
-        max-width: 200%;
-    }
+            width: 90%;
+            max-width: 200%;
+        }
 
-    .btn2 {
-        margin-top: 20px;
-        width: 30%;
-        flex-direction: column-reverse;
-        color: black;
+        .btn2 {
+            margin-top: 20px;
+            width: 30%;
+            flex-direction: column-reverse;
+            color: black;
 
+        }
     }
 }
