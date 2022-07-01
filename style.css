@@ -248,7 +248,7 @@ background-color: transparent;
         .container {
             display: grid;
             margin-top: 200px;
-            width: 90%;
+            width: 100%;
             max-width: 100%;
         }
 
