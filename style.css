@@ -260,4 +260,9 @@ background-color: transparent;
         color: gray;
 
     }
+    .btn2:hover{
+        border: 1px solid hsl(0, 0%, 21%);
+        color: gray;
+
+    }
 }
