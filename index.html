@@ -9,6 +9,7 @@
     <title>ROBIN ELLINGSEN</title>
     <script defer src="game.js"></script>
 
+
 </head>
 <body>
 
@@ -16,14 +17,17 @@
 
 
     <button class="btn3"  id="soundBtn" onclick="playMp3()">sound</button>
+<!--    sword img-->
     <img src="sword.png" class="swordBox" id="sword"  width="32" height="32">
+<!--    cv scroll img-->
     <img src="cvscroll.png" class="swordBox" id="cvscroll"  width="32" height="32">
+<!--    old cursor sruff-->
     <div class='cursor' id="cursor"></div>
 
 
     <div class="super-container">
 
-
+    <!--        choices button-->
         <div class ="container">
             <div class="text" id="text">Text</div>
                 <div id="option-buttons" class="btn-grid">
@@ -33,6 +37,7 @@
                     <button class="btn">option4</button>
             </div>
         </div>
+    <!--        fireplace-->
         <div class="wrapper">
                 <div class = "wood" id = "wood-1"></div>
                 <div class = "wood" id = "wood-2"></div>
@@ -52,7 +57,7 @@
         </h5>
     </div>
 
-
+<!-- Play sound when sound button is clicked -->
     <script>
         let playState = false;
         var soundButton = document.getElementById("soundBtn");

@@ -32,8 +32,8 @@ fireAudio.loop = true;
 
 
 
-
-//CURSOR STUFF
+//
+// CURSOR STUFF
 // var cursor = document.getElementById("cursor");
 // document.body.addEventListener("mousemove", function(e) {
 //     cursor.style.left = e.clientX + "px",
