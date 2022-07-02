@@ -246,7 +246,7 @@ background-color: transparent;
         width: 100%;
         background-image: url("resume_bg_mobile.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100%;
     }
         .super-container {
 
