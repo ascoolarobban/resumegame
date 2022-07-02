@@ -17,6 +17,7 @@
 
     <button class="btn3"  id="soundBtn" onclick="playMp3()">sound</button>
     <img src="sword.png" class="swordBox" id="sword"  width="32" height="32">
+    <img src="cvscroll.png" class="swordBox" id="cvscroll"  width="32" height="32">
     <div class='cursor' id="cursor"></div>
 
 
@@ -70,6 +71,34 @@
             }
         }
     </script>
+<!--    Hover disable on mobile:-->
+    <script>
+        function hasTouch() {
+            return 'ontouchstart' in document.documentElement
+                || navigator.maxTouchPoints > 0
+                || navigator.msMaxTouchPoints > 0;
+        }
+
+        if (hasTouch()) { // remove all the :hover stylesheets
+            try { // prevent exception on browsers not supporting DOM styleSheets properly
+                for (var si in document.styleSheets) {
+                    var styleSheet = document.styleSheets[si];
+                    if (!styleSheet.rules) continue;
+
+                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                        if (!styleSheet.rules[ri].selectorText) continue;
+
+                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                            styleSheet.deleteRule(ri);
+                        }
+                    }
+                }
+            } catch (ex) {}
+        }
+
+    </script>
+
+<!--    Updates stylesheet for mobile-->
     <script>
 
         (function() {

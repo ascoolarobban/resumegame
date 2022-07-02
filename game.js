@@ -11,6 +11,7 @@ fireAudio = new Audio('fire.wav');
 
 //Show Sword img
 document.getElementById("sword").hidden=true;
+document.getElementById("cvscroll").hidden=true;
 
 
 
@@ -49,6 +50,7 @@ let state = {}
 function startGame(){
     state = {}
     document.getElementById("sword").hidden=true;
+    document.getElementById("cvscroll").hidden=true;
     showTextNode(1)
 
 }
@@ -56,6 +58,10 @@ function startGame(){
 function showTextNode(textNodeIndex){
     if(state.sword){
         document.getElementById("sword").hidden=false;
+
+    }
+    if(state.cvscroll){
+        document.getElementById("cvscroll").hidden=false;
 
     }
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -162,6 +168,7 @@ const textNodes = [
         options: [
             {
                 text: "ok..im sold! I will accept your resumé",
+                setState: {cvscroll: true},
                 nextText: 11
             },
             {
