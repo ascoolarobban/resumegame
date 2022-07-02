@@ -240,7 +240,10 @@ background-color: transparent;
 
 @media (max-width: 600px) {
     body{
+        width: 100%;
         background-image: url("resume_bg_mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
         .super-container {
 
