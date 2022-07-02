@@ -239,6 +239,9 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
+    body{
+        background-image: url("resume_bg_mobile.jpg");
+    }
         .super-container {
 
             width: 100%;
