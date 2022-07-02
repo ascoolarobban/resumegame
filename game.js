@@ -7,7 +7,8 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 //SOUND STUFF
-fireAudio = new Audio('fire.wav');
+// fireAudio = new Audio('fire.wav');
+fireAudio = new Audio('sounds/no_fire.wav');
 
 //Show Sword img
 document.getElementById("sword").hidden=true;
