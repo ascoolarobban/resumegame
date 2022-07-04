@@ -259,7 +259,8 @@ background-color: transparent;
         width: 100%;
         background-image: url("resume_bg_mobile.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-color: black;
     }
         .super-container {
 
@@ -267,6 +268,7 @@ background-color: transparent;
             max-width: 100%;
         }
         .container {
+            margin-top: 40px;
             width: 90%;
             max-width: 100%;
         }
@@ -276,6 +278,17 @@ background-color: transparent;
             width: 30%;
             flex-direction: column-reverse;
             color: black;
+
+        }
+        .about{
+            position: absolute;
+            border-radius: 0px;
+            padding: 5px 10px;
+            color: gray;
+            top: 590px;
+            left: 45%;
+            bottom: -20px;
+
 
         }
 
