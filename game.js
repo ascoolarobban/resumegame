@@ -63,7 +63,14 @@ function showTextNode(textNodeIndex){
     }
     if(state.cvscroll){
         document.getElementById("cvscroll").hidden=false;
-
+            let url ="cv.pdf"
+            const a = document.createElement('a')
+            a.href = url
+            a.download = url.split('/').pop()
+            document.body.appendChild(a)
+            a.click()
+            document.body.removeChild(a)
+        
     }
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
