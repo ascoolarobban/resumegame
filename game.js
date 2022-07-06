@@ -70,7 +70,7 @@ function showTextNode(textNodeIndex){
             document.body.appendChild(a)
             a.click()
             document.body.removeChild(a)
-        
+
     }
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
