@@ -112,5 +112,18 @@ body{
         background-image: url("resume_bg_mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: black;
+
     }
+    .parent{
+        width: 50%;
+        max-width: 100%;
+        padding-top: 10px;
+
+    }
+    .container{
+        padding-top: 500px;
+        padding-bottom: 400px;
+    }
+
 }
