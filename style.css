@@ -28,6 +28,15 @@ body{
 
 
 }
+.title{
+    margin: 30px;
+    color: white;
+    /*font-family: sans-serif;*/
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 32px ghostwhite;
+}
 
 .text{
 
