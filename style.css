@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-
-
-
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Staatliches&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Rubik+Mono+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Rubik+Mono+One&family=Staatliches&display=swap');
 body {background-color: #1e1d1d;}
 *, *::before, *::after{
     box-sizing: border-box;
@@ -32,7 +32,8 @@ body{
     margin: 30px;
     color: white;
     /*font-family: sans-serif;*/
-    font-family: 'Staatliches', cursive;
+    /*font-family: 'Staatliches', cursive;*/
+    font-family: 'Cabin Sketch', cursive;
     font-size: 40px;
     font-weight: bold;
     text-shadow: 0 0 32px ghostwhite;
